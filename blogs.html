@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Product</title>
+    <style>
+      .scrolled {
+        background-color: white !important;
+        border-bottom: 1px solid #d2ccc6;
+      }
+      .scrolled .logo-with-text {
+        display: none !important;
+      }
+      .scrolled .logo-text-holder {
+        display: none !important;
+      }
+      .scrolled .logo-text {
+        display: flex !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header
+      id="navbar"
+      class="fixed w-full font-abc-arizona-flare-variable lg:bg-transparent bg-[#FEFCF2] uppercase text-[#544C43] px-[20px] py-[8px] transition-colors duration-300"
+    >
+      <div
+        class="container mx-auto flex flex-wrap items-center justify-between"
+      >
+        <!-- Mobile menu button -->
+        <div class="lg:hidden flex w-full justify-between items-center">
+          <a
+            href="#"
+            class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
+          >
+            <img src="./assets/Tract.svg" alt="Logo" />
+          </a>
+          <button id="menu-toggle" class="block text-gray-900">
+            <img src="./assets/Burger.svg" alt="Menu" />
+          </button>
+        </div>
+
+        <div
+          class="hidden lg:flex container mx-auto flex flex-wrap flex-col md:flex-row items-center"
+        >
+          <nav
+            class="flex lg:w-2/5 flex-wrap gap-[48px] items-center text-base md:ml-auto"
+          >
+            <a href="./index.html#introduction" class="hover:text-gray-900"
+              >Introduction</a
+            >
+            <a href="./products.html" class="hover:text-gray-900">Products</a>
+            <a href="#" class="hover:text-gray-900">Careers</a>
+          </nav>
+
+          <a
+            href="./index.html"
+            class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
+          >
+            <div class="logo-text-holder block w-[98px]"></div>
+            <img class="logo-text hidden" src="./assets/Tract.svg" alt="Logo" />
+          </a>
+          <a
+            href="./index.html"
+            class="logo-with-text flex flex-col absolute top-[8px] left-1/2 transform -translate-x-1/2 gap-[29px] order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
+          >
+            <img
+              class="w-[27.25px] h-[29.24px]"
+              src="./assets/TractLogo.svg"
+              alt="Logo"
+            />
+            <img src="./assets/Tract.svg" alt="Logo" />
+          </a>
+          <div
+            class="lg:w-2/5 inline-flex flex gap-[48px] lg:justify-end ml-5 lg:ml-0"
+          >
+            <a href="./index.html#team" class="hover:text-gray-900">Team</a>
+            <a href="./index.html#contact" class="hover:text-gray-900"
+              >Contact</a
+            >
+            <a href="./blogs.html" class="hover:text-gray-900">Blog</a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="lg:hidden border-b border-b-[#D2CCC6] fixed inset-0 z-50 transform -translate-x-full transition-transform duration-300"
+        >
+          <div class="flex justify-end p-[20px]">
+            <button
+              id="close-menu"
+              class="text-[#544C43] text-[12px] leading-[12px] tracking-[4%] border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase"
+            >
+              Close
+            </button>
+          </div>
+          <nav
+            class="flex text-[14px] text-[#544C43] leading-[17.25px] tracking-[4%] flex-col items-center gap-[51px] mt-12"
+          >
+            <a
+              href="./index.html#introduction"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Introduction</a
+            >
+            <a
+              href="./products.html"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Products</a
+            >
+            <a
+              href="#"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Careers</a
+            >
+            <a
+              href="./index.html#team"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Team</a
+            >
+            <a
+              href="./index.html#contact"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Contact</a
+            >
+            <a
+              href="./blogs.html"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Blog</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Blogs Section Start -->
+    <div
+      class="bg-[#FEFCF2] container mx-auto lg:px-[60px] text-[#544C43] md:px-[30px] px-[20px] md:py-[130px] py-[70px]"
+    >
+      <h1
+        class="text-center text-[52px] font-abc-arizona-flare-variable leading-[54.6px] tracking-[2%] mb-[40px]"
+      >
+        BLOG
+      </h1>
+      <p
+        class="text-center text-[22px] leading-[27.57px] max-w-[469px] mx-auto"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+        libero et velit interdum, ac aliquet odio mattis.
+      </p>
+
+      <div class="flex justify-between mt-[100px]">
+        <div class="w-1/4 pr-8">
+          <div class="mb-6">
+            <label
+              for="search"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Search keyword</label
+            >
+            <input
+              type="text"
+              id="search"
+              class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+            />
+          </div>
+          <div class="flex mb-6">
+            <button
+              class="flex-1 bg-green-500 text-white py-2 px-4 rounded-md mr-2"
+            >
+              SEARCH
+            </button>
+            <button
+              class="flex-1 bg-gray-200 text-gray-700 py-2 px-4 rounded-md"
+            >
+              CLEAR
+            </button>
+          </div>
+          <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2"
+              >Sort by</label
+            >
+            <div class="flex items-center mb-4">
+              <input
+                id="newest"
+                name="sort"
+                type="radio"
+                checked
+                class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300"
+              />
+              <label
+                for="newest"
+                class="ml-3 block text-sm font-medium text-gray-700"
+                >Newest</label
+              >
+            </div>
+            <div class="flex items-center">
+              <input
+                id="oldest"
+                name="sort"
+                type="radio"
+                class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300"
+              />
+              <label
+                for="oldest"
+                class="ml-3 block text-sm font-medium text-gray-700"
+                >Oldest</label
+              >
+            </div>
+          </div>
+          <div class="mb-6">
+            <label
+              for="author"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Author</label
+            >
+            <select
+              id="author"
+              name="author"
+              class="block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+            >
+              <option>Author 1</option>
+              <option>Author 2</option>
+            </select>
+          </div>
+          <div>
+            <label
+              for="subject"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Subject</label
+            >
+            <select
+              id="subject"
+              name="subject"
+              class="block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+            >
+              <option>Subject 1</option>
+              <option>Subject 2</option>
+            </select>
+          </div>
+        </div>
+        <div class="w-3/4">
+          <div class="grid grid-cols-2 md:gap-[40px] gap-[20px]">
+            <div
+              class="bg-[#FEFCF2] flex flex-col gap-[20px] border-b border-b-[#D2CCC6]"
+            >
+              <img
+                src="./assets/blog-img.png"
+                alt="Image"
+                class="w-full h-[300px] object-cover"
+              />
+              <div class="flex flex-col px-[5px] pb-[20px] gap-[20px]">
+                <p
+                  class="text-[12px] leading-[16px] tracking-[4%] text-center font-mallory-trial"
+                >
+                  14 AUG 2024
+                </p>
+                <div
+                  class="font-mallory-trial flex gap-[10px] text-[12px] leading-[16px] tracking-[4%] mx-auto uppercase"
+                >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                </div>
+                <p
+                  class="font-abc-arizona-flare-variable text-center text-[20px] leading-[23px] tracking-[-1%]"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Vel risus commodo viverra maecenas.
+                </p>
+                <p
+                  class="font-test-martina-plantijn-italic text-[15px] leading-[22.5px] text-center"
+                >
+                  Jamie Rumblelow
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-[#FEFCF2] flex flex-col gap-[20px] border-b border-b-[#D2CCC6]"
+            >
+              <img
+                src="./assets/blog-img.png"
+                alt="Image"
+                class="w-full h-[300px] object-cover"
+              />
+              <div class="flex flex-col px-[5px] pb-[20px] gap-[20px]">
+                <p
+                  class="text-[12px] leading-[16px] tracking-[4%] text-center font-mallory-trial"
+                >
+                  14 AUG 2024
+                </p>
+                <div
+                  class="font-mallory-trial flex gap-[10px] text-[12px] leading-[16px] tracking-[4%] mx-auto uppercase"
+                >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                </div>
+                <p
+                  class="font-abc-arizona-flare-variable text-center text-[20px] leading-[23px] tracking-[-1%]"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Vel risus commodo viverra maecenas.
+                </p>
+                <p
+                  class="font-test-martina-plantijn-italic text-[15px] leading-[22.5px] text-center"
+                >
+                  Jamie Rumblelow
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-[#FEFCF2] flex flex-col gap-[20px] border-b border-b-[#D2CCC6]"
+            >
+              <img
+                src="./assets/blog-img.png"
+                alt="Image"
+                class="w-full h-[300px] object-cover"
+              />
+              <div class="flex flex-col px-[5px] pb-[20px] gap-[20px]">
+                <p
+                  class="text-[12px] leading-[16px] tracking-[4%] text-center font-mallory-trial"
+                >
+                  14 AUG 2024
+                </p>
+                <div
+                  class="font-mallory-trial flex gap-[10px] text-[12px] leading-[16px] tracking-[4%] mx-auto uppercase"
+                >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                </div>
+                <p
+                  class="font-abc-arizona-flare-variable text-center text-[20px] leading-[23px] tracking-[-1%]"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Vel risus commodo viverra maecenas.
+                </p>
+                <p
+                  class="font-test-martina-plantijn-italic text-[15px] leading-[22.5px] text-center"
+                >
+                  Jamie Rumblelow
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-[#FEFCF2] flex flex-col gap-[20px] border-b border-b-[#D2CCC6]"
+            >
+              <img
+                src="./assets/blog-img.png"
+                alt="Image"
+                class="w-full h-[300px] object-cover"
+              />
+              <div class="flex flex-col px-[5px] pb-[20px] gap-[20px]">
+                <p
+                  class="text-[12px] leading-[16px] tracking-[4%] text-center font-mallory-trial"
+                >
+                  14 AUG 2024
+                </p>
+                <div
+                  class="font-mallory-trial flex gap-[10px] text-[12px] leading-[16px] tracking-[4%] mx-auto uppercase"
+                >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                  <span
+                    class="border border-[#D2CCC6] rounded-[5px] px-[10px] py-[6px]"
+                    >TAG</span
+                  >
+                </div>
+                <p
+                  class="font-abc-arizona-flare-variable text-center text-[20px] leading-[23px] tracking-[-1%]"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Vel risus commodo viverra maecenas.
+                </p>
+                <p
+                  class="font-test-martina-plantijn-italic text-[15px] leading-[22.5px] text-center"
+                >
+                  Jamie Rumblelow
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blogs Section End -->
+
+    <!-- Discover Start -->
+    <div class="flex md:flex-row flex-col justify-center text-center">
+      <div
+        class="bg-[#FFB097] md:px-[98px] px-[20px] text-[#544C43] md:py-[60px] py-[20px] flex flex-col gap-[20px]"
+      >
+        <div class="flex flex-col mx-auto gap-[8px]">
+          <img
+            class="w-[38.22px] h-[43.2px] mx-auto"
+            src="./assets/TractLogo.svg"
+            alt="Logo"
+          />
+          <h2
+            class="font-abc-arizona-flare-variable uppercase text-[20px] leading-[21px] tracking-[2%]"
+          >
+            AT.TRACT.BUILD
+          </h2>
+        </div>
+        <div class="flex flex-col gap-[30px]">
+          <p class="text-[15px] leading-[22.5px]">
+            Generate a free, instant appraisal for your land, based on the
+            site's features and the sort of development you'd like it to host.
+          </p>
+          <button
+            class="font-mallory-trial text-[12px] uppercase w-fit mx-auto leading-[16px] tracking-[4%] text-[#FEFCF2] bg-[#544C43] rounded-[50px] px-[20px] py-[10px]"
+          >
+            TRY FOR FREE
+          </button>
+        </div>
+      </div>
+      <div
+        class="bg-[#75CDE0] md:px-[98px] px-[20px] text-[#544C43] md:py-[60px] py-[20px] flex flex-col gap-[20px]"
+      >
+        <div class="flex flex-col mx-auto gap-[8px]">
+          <img
+            class="w-[73.81px] h-[40px] mx-auto"
+            src="./assets/UnionLogo.svg"
+            alt="Logo"
+          />
+          <h2
+            class="font-abc-arizona-flare-variable uppercase text-[20px] leading-[21px] tracking-[2%]"
+          >
+            Coming soon...
+          </h2>
+        </div>
+        <div class="flex flex-col gap-[30px]">
+          <p class="text-[15px] leading-[22.5px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button
+            class="font-mallory-trial text-[12px] uppercase w-fit mx-auto leading-[16px] tracking-[4%] text-[#FEFCF2] bg-[#544C43] rounded-[50px] px-[20px] py-[10px]"
+          >
+            NOTIFY ME
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Discover End -->
+
+    <!-- Footer Start -->
+    <footer
+      class="flex flex-col md:py-[100px] py-[30px] lg:px-[250px] md:px-[180px] px-[20px] bg-[#8EA75F] text-center text-[#544C43] font-[400]"
+    >
+      <div class="flex flex-col gap-[40px]">
+        <span
+          class="uppercase font-mallory-trial text-[12px] leading-[16px] tracking-[4%]"
+          >Open Source</span
+        >
+        <p
+          class="md:text-[32px] text-[20px] md:leading-[40.1px] leading-[25.06px]"
+        >
+          Our mission to build one million houses requires collaboration. We’ve
+          made our our code base
+          <span class="underline font-test-martina-plantijn-italic"
+            >available open source</span
+          >
+          to allow iteration, experimentation and ultimately increase innovative
+          potential of our products.
+        </p>
+      </div>
+
+      <div
+        id="contact"
+        class="flex flex-col gap-[40px] md:pt-[100px] pt-[40px] md:pb-[120px] pb-[40px]"
+      >
+        <span
+          class="uppercase font-mallory-trial text-[12px] leading-[16px] tracking-[4%]"
+          >Contact</span
+        >
+        <p
+          class="md:text-[32px] text-[20px] md:leading-[40.1px] leading-[25.06px]"
+        >
+          If you would like to help, or are interested in using our
+          platform, send us an
+          <span class="underline font-test-martina-plantijn-italic">email</span
+          >, or speak to
+          <span class="underline font-test-martina-plantijn-italic">Jamie</span
+          >.
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center md:pb-[120px] pb-[40px]">
+        <img src="./assets/TractLogo.svg" alt="Logo" />
+      </div>
+
+      <div
+        class="font-mallory-trial grid lg:grid-cols-4 grid-cols-2 items-center font-[400] text-[12px] leading-[16.8px] justify-between gap-[7px]"
+      >
+        <span class="lg:text-center text-left">Copyright © 2024 Tract</span>
+        <a class="lg:text-center text-right" href="#">Privacy Policy</a>
+        <a class="lg:text-center text-left" href="#">Terms and Conditions</a>
+        <span class="lg:text-center text-right">Designed by And-Now</span>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+      // JavaScript for mobile menu toggle
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeMenu = document.getElementById("close-menu");
+      const navbar = document.getElementById("navbar");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.remove("-translate-x-full");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("-translate-x-full");
+      });
+
+      // Change navbar background on scroll
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
