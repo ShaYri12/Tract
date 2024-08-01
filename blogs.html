@@ -15,7 +15,7 @@
     <title>Product</title>
     <style>
       .scrolled {
-        background-color: white !important;
+        background-color: #fefcf2 !important;
         border-bottom: 1px solid #d2ccc6;
       }
       .scrolled .logo-with-text {
@@ -85,14 +85,9 @@
             href="#"
             class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
           >
-            <img
-              width="98px"
-              height="14.7px"
-              src="./assets/Tract.svg"
-              alt="Logo"
-            />
+            <img src="./assets/Tract.svg" alt="Logo" />
           </a>
-          <button id="menu-toggle" class="block">
+          <button id="menu-toggle" class="block text-gray-900">
             <img src="./assets/Burger.svg" alt="Menu" />
           </button>
         </div>
@@ -142,7 +137,7 @@
         <!-- Mobile Menu -->
         <div
           id="mobile-menu"
-          class="lg:hidden border-b border-b-[#D2CCC6] fixed inset-0 z-50 transform -translate-x-full transition-transform duration-300"
+          class="lg:hidden border-b border-b-[#D2CCC6] bg-white fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-300"
         >
           <div class="flex justify-end p-[20px]">
             <button
@@ -546,7 +541,7 @@
 
     <!-- Footer Start -->
     <footer
-      class="flex flex-col md:py-[100px] py-[30px] lg:px-[250px] md:px-[180px] px-[20px] bg-[#8EA75F] text-center text-[#544C43] font-[400]"
+      class="flex flex-col md:pt-[100px] md:pb-[7px] pb-[32px] pt-[30px] lg:px-[250px] md:px-[180px] px-[20px] bg-[#8EA75F] text-center text-[#544C43] font-[400]"
     >
       <div class="flex flex-col gap-[40px]">
         <span
@@ -606,7 +601,7 @@
       const menuToggle = document.getElementById("menu-toggle");
       const mobileMenu = document.getElementById("mobile-menu");
       const closeMenu = document.getElementById("close-menu");
-      const navbar = document.getElementById("navbar");
+      const navLinks = document.querySelectorAll("#mobile-menu a");
 
       menuToggle.addEventListener("click", () => {
         mobileMenu.classList.remove("-translate-x-full");
@@ -614,6 +609,12 @@
 
       closeMenu.addEventListener("click", () => {
         mobileMenu.classList.add("-translate-x-full");
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("-translate-x-full");
+        });
       });
 
       // Change navbar background on scroll
