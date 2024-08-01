@@ -22,6 +22,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Mallory-Book";
+  src: url("./assets/fonts/Mallory-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "TestMartinaPlantijn-Regular", sans-serif;
 }
@@ -34,6 +41,10 @@ body {
 
 .font-abc-arizona-flare-variable {
   font-family: "ABCArizonaFlareVariable-Trial", sans-serif;
+}
+
+.font-mallory-trial {
+  font-family: "Mallory-Book";
 }
 
 * {
