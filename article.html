@@ -9,24 +9,25 @@
 </head>
 <body>
     <div>
-         <div class="text-center pt-[54px] pb-[400px] w-full bg-[#FEFCF2]">
-            <div class="max-w-[600px] w-full mx-auto flex items-center flex-col gap-16">
+         <div class="text-center pt-[54px] pb-[150px] md:pb-[400px] w-full bg-[#FEFCF2]">
+            <div class="max-w-[600px] w-full mx-auto flex items-center flex-col gap-8 md:gap-16 px-5">
                 <h4 class="text-[#544C43] uppercase text-[12px] leading-[16px] tracking-[0.04em] font-mallory-trial">June 2024</h4>
-                <h2 class="text-[#544C43] text-[52px] leading-[54px] tracking-[0.02em] font-abc-arizona-flare-variable">The Planning System Does Too Much</h2>
-                <img src="./assets/divider.svg" alt="divider" width="186px" height="2px">
+                <h2 class="uppercase text-[#544C43] text-[40px] leading-[42px] md:text-[52px] md:leading-[54px] tracking-[0.02em] font-abc-arizona-flare-variable">The Planning System Does Too Much</h2>
+                <img src="./assets/divider.svg" alt="divider" width="186px" height="2px" class="md:w-[186px] w-[200px]">
                 <div>
                     <h3 class="text-[#544C43] text-[15px] leading-[22.5px] font-test-martina-plantijn-italic font-normal">Words by</h3>
-                    <h4 class="text-[#544C43] text-[12px] leading-[16px] font-normal font-mallory-trial tracking-[0.04em] uppercase">Jamie Rumbelow</h4>
+                    <h4 class="mt-2 md:mt-0 text-[#544C43] text-[12px] leading-[16px] font-normal font-mallory-trial tracking-[0.04em] uppercase border-[#D2CCC6] border md:border-0 py-1.5 px-3 md:p-0 rounded-[50px] md:rounded-0">Jamie Rumbelow</h4>
                 </div>
             </div>
         </div>
         
-        <div class="-mt-[300px] max-w-[1000px] w-full mx-auto">
-            <img src="./assets/artical.svg" alt="artical" class="h-[604px]">
+        <div class="-mt-[100px] md:-mt-[300px] max-w-[1000px] mx-auto w-full flex items-center justify-center px-5">
+            <img src="./assets/artical.svg" alt="artical" class="md:block hidden">
+            <img src="./assets/article3.svg" alt="article" class="md:hidden block">
         </div>
 
-        <div class="flex items-start justify-between px-12 gap-10 pb-[60px] pt-[100px] max-w-[1440px] w-full mx-auto">
-            <div class="min-w-[247px]">
+        <div class="flex items-start justify-between px-5 md:px-12 gap-10 pb-[40px] md:pb-[60px] pt-[50px] md:pt-[100px] max-w-[1440px] w-full mx-auto">
+            <div class="min-w-[247px] lg:block hidden">
                 <h3 class="mb-5 text-[#544C43] text-[12px] leading-[16px] font-normal font-mallory-trial tracking-[0.04em]">Contents</h3>
                 <div class="border-y border-[#544C43] pt-2.5 pb-5">
                     <h3 class="text-[#544C43] text-[12px] leading-[16.8px] font-mallory-trial font-normal">The Overburdened UK Planning System</h3>
@@ -46,99 +47,103 @@
             </div>
 
             <div class="max-w-[706px] w-full mx-auto flex items-center justify-center flex-col">
-                <h2 class="text-[#544C43] text-[22px] leading-[27px] font-normal">The UK planning system does too much. It is used to change things about society that go far beyond the built environment.</h2>
-                <div class="flex flex-col gap-3 mt-10">
-                    <p class="text-[#544C43] text-[18px] leading-[27px] font-normal">We use the planning system to protect the environment, preserve our heritage, reduce noise, increase biodiversity, support the local character, promote light, promote cycling, promote driving, and fight crime.</p>
-                    <p class="text-[#544C43] text-[18px] leading-[27px] font-normal">Each of these goals are laudable in themselves, but in aggregate they cause tremendous damage. They create cascading costs and complexity for even simple, sensible changes. They price out smaller businesses from engaging with the planning system. And the net of all this is that fewer houses get built.</p>
-                    <p class="text-[#544C43] text-[18px] leading-[27px] font-normal">A prominent, recent example was the nutrient neutrality debate. Rivers containing excess phosphorous and nitrogen undergo a process called eutrophication, which drives an increase in algae and a depletion of oxygen. This can cause harms to the river’s ecology, and, in some severe cases, harm to human health.</p>
-                    <p class="text-[#544C43] text-[18px] leading-[27px] font-normal">In 2018, an ECJ ruling, supported by UK courts, ruled that new building projects should not add more nutrients to any already-stressed water systems. The idea was that any new project should either reduce its nutrient output to zero or offset it by making improvements elsewhere, thus achieving a ‘neutral’ impact on nutrient levels in local water bodies.</p>
-                    <p class="text-[#544C43] text-[18px] leading-[27px] font-normal">The trouble is that this is neither the correct problem to focus on, nor the correct solution to that problem. From Housing Today :</p>
+                <h2 class="text-[#544C43] text-[20px] md:text-[22px] leading-[27px] font-normal">The UK planning system does too much. It is used to change things about society that go far beyond the built environment.</h2>
+                <div class="flex flex-col gap-3 mt-5 md:mt-10">
+                    <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">We use the planning system to protect the environment, preserve our heritage, reduce noise, increase biodiversity, support the local character, promote light, promote cycling, promote driving, and fight crime.</p>
+                    <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">Each of these goals are laudable in themselves, but in aggregate they cause tremendous damage. They create cascading costs and complexity for even simple, sensible changes. They price out smaller businesses from engaging with the planning system. And the net of all this is that fewer houses get built.</p>
+                    <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">A prominent, recent example was the nutrient neutrality debate. Rivers containing excess phosphorous and nitrogen undergo a process called eutrophication, which drives an increase in algae and a depletion of oxygen. This can cause harms to the river’s ecology, and, in some severe cases, harm to human health.</p>
+                    <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">In 2018, an ECJ ruling, supported by UK courts, ruled that new building projects should not add more nutrients to any already-stressed water systems. The idea was that any new project should either reduce its nutrient output to zero or offset it by making improvements elsewhere, thus achieving a ‘neutral’ impact on nutrient levels in local water bodies.</p>
+                    <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">The trouble is that this is neither the correct problem to focus on, nor the correct solution to that problem. From Housing Today :</p>
                 </div>
             </div>
 
-            <div class="max-w-[247px] flex items-start gap-5 pt-[180px]">
+            <div class="max-w-[247px] flex items-start gap-5 pt-[180px] lg:block hidden">
                 <h4 class="text-[#544C43] text-[12px] leading-[16px] tracking-[0.04em] font-mallory-trial">1</h4>
                 <p class="text-left text-[#544C43] text-[12px] leading-[16.8px] font-mallory-trial font-normal">If you think I’m joking about any of these, take a look at your local council’s <a href="https://www.merton.gov.uk/system/files?file=2018-06-0120validation20checklist20adopted20-20for20publication.pdf" class="italic  underline">validation checklist</a>, the list of documents required for planning applications.</p>
             </div>
         </div>
         
-        <div class="max-w-[706px] mx-auto w-full flex items-center flex-col ">
-            <div class="py-10">
+        <div class="max-w-[706px] mx-auto w-full flex items-center flex-col px-5">
+            <div class="md:py-10 mb-[40px]">
                 <img src="./assets/divider2.svg" alt="divider" >
             </div>
             
             <div class="text-left">
-                <h2 class="text-[#544C43] text-[38px] leading-[43.7px] font-normal font-abc-arizona-flare-variable tracking-[0.01em] text-left">The Overburdened UK Planning System</h2>
-                <div class="mt-10">
-                     <p class="max-w-[646px] italic text-[#544C43] pl-[60px] border-l-2 border-[#544C43] font-test-martina-plantijn-italic text-[22px] leading-[28px] font-normal">The figures from the  Agency showed that for phosphate pollution, agriculture was thought to be behind 40-50% of the problem, with sewage treatment works contributing around 40%. With nitrogen pollution, treatment works contribute 48% of pollution load, agriculture 52%. The Environment Agency figures didn’t mention development per se or even urban run-off as a major source of pollution. </p>
+                <h2 class="text-[#544C43] text-[32px] md:text-[38px] leading-[36px] md:leading-[43.7px] font-normal font-abc-arizona-flare-variable tracking-[0.01em] text-left">The Overburdened UK Planning System</h2>
+                <div class="mt-[30px] md:mt-10">
+                     <p class="max-w-[646px] italic text-[#544C43] pl-5 md:pl-[60px] border-l border-[#544C43] font-test-martina-plantijn-italic text-[22px] leading-[28px] font-normal">The figures from the  Agency showed that for phosphate pollution, agriculture was thought to be behind 40-50% of the problem, with sewage treatment works contributing around 40%. With nitrogen pollution, treatment works contribute 48% of pollution load, agriculture 52%. The Environment Agency figures didn’t mention development per se or even urban run-off as a major source of pollution. </p>
                 </div>
             </div>
             
-            <div class="pt-20 pb-10">
+            <div class="pt-10 md:pt-20 pb-10">
                 <img src="./assets/divider2.svg" alt="divider" >
             </div>
-            <h2 class="pb-10 text-center text-[#544C43] text-[32px] font-normal leading-[36px] tracking-[-0.01em] font-abc-arizona-flare-variable">Environmental Goals and Their Impact on Planning</h2>
-            <p class="text-[#544C43] text-[18px] leading-[27px] font-normal">In short, urban run-off is not a main driver of this pollution: it is dwarfed by agriculture and sewage. Even if urban run-off were as high as 15%, new builds would be a small fraction of that; this is not the right problem to be focussing on.</p>
-            <p class="mt-3 pb-20 text-[#544C43] text-[18px] leading-[27px] font-normal">But the problem is worse: demonstrating this neutrality has proven, time and again, to be extremely difficult and expensive – planning decisions are effectively on hold in 74 local authorities where the rules are in effect – so developers can’t get permission for sites. The net result is that we see a very small reduction in nutrient levels and a very large reduction in the number of houses being built.</p>
+            <h2 class="pb-[30px] md:pb-10 text-left text-[#544C43] text-[26px] md:text-[32px] font-normal leading-[29px] md:leading-[36px] tracking-[-0.01em] font-abc-arizona-flare-variable">Environmental Goals and Their Impact on Planning</h2>
+            <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">In short, urban run-off is not a main driver of this pollution: it is dwarfed by agriculture and sewage. Even if urban run-off were as high as 15%, new builds would be a small fraction of that; this is not the right problem to be focussing on.</p>
+            <p class="mt-3 pb-20 text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">But the problem is worse: demonstrating this neutrality has proven, time and again, to be extremely difficult and expensive – planning decisions are effectively on hold in 74 local authorities where the rules are in effect – so developers can’t get permission for sites. The net result is that we see a very small reduction in nutrient levels and a very large reduction in the number of houses being built.</p>
 
-            <div class="mt-10 mb-20">
+            <div class="md:mt-10 mb-10 md:mb-20">
                 <div class="border-b border-[#544C43]">
-                    <img src="./assets/artical1.svg" alt="artical" width="">
-                    <div class="pb-4 pt-2 flex items-start gap-10">
+                    <img src="./assets/artical1.svg" alt="artical" width="" class="md:block hidden">
+                    <img src="./assets/article4.svg" alt="artical" width="" class="md:hidden block">
+                    <div class="pb-4 pt-2 flex items-start gap-8 md:gap-10">
                         <img src="./assets/arrow.svg" alt="arrow">
                         <p class="text-[#544C43] text-[12px] leading-[16.8px] font-normal font-mallory-trial">If you think I’m joking about any of these, take a look at your local council’s <a href="https://www.merton.gov.uk/system/files?file=2018-06-0120validation20checklist20adopted20-20for20publication.pdf" class="underline italic font-mallory-trial">validation checklist</a>, the list of documents required for planning applications.</p>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="text-left max-w-[706px] mx-auto w-full">
-            <h2 class="mb-10 text-[#544C43] text-[26px] leading-[29.9px] font-normal font-abc-arizona-flare-variable tracking-[-0.01em]">Case Study: Nutrient Neutrality Debate</h2>
-            <p class="mb-3 text-[#544C43] text-[18px] leading-[27px] font-normal">The question I’m asking today is not whether we should care about nutrient pollution in our rivers: it is clearly a problem and something we should care about fixing. My question is whether the planning system itself should be responsible.</p>
-            <p class="text-[#544C43] text-[18px] leading-[27px] font-normal">As <span class="underline underline-offset-[6px]">the chief planner writes</span> (my emphasis):</p>
+
+        <div class="text-left max-w-[706px] mx-auto w-full px-5">
+            <h2 class="mb-5 md:mb-10 text-[#544C43] text-[23px] md:text-[26px] leading-[26px] md:leading-[29.9px] font-normal font-abc-arizona-flare-variable tracking-[-0.01em]">Case Study: Nutrient Neutrality Debate</h2>
+            <p class="mb-3 text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">The question I’m asking today is not whether we should care about nutrient pollution in our rivers: it is clearly a problem and something we should care about fixing. My question is whether the planning system itself should be responsible.</p>
+            <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">As <span class="underline underline-offset-[6px]">the chief planner writes</span> (my emphasis):</p>
             <div class="mt-10">
-                <p class="max-w-[646px] italic text-[#544C43] pl-[60px] border-l-2 border-[#544C43] font-test-martina-plantijn-italic text-[22px] leading-[28px] font-normal">The levels of nutrient loads in treated wastewater is subject to pollution control regimes that sit outside of the planning system and which should address many of the issues relating to the discharge into rivers. Planning decisions should be made on the assumption that these pollution control regimes will operate effectively.</p>
+                <p class="max-w-[646px] italic text-[#544C43] pl-5 md:pl-[60px] border-l border-[#544C43] font-test-martina-plantijn-italic text-[22px] leading-[28px] font-normal">The levels of nutrient loads in treated wastewater is subject to pollution control regimes that sit outside of the planning system and which should address many of the issues relating to the discharge into rivers. Planning decisions should be made on the assumption that these pollution control regimes will operate effectively.</p>
            </div>
-           <div class="pt-20 pb-10 flex items-center justify-center">
+           <div class="pt-10 md:pt-20 pb-10 flex items-center justify-center">
                 <img src="./assets/divider2.svg" alt="divider" >
             </div>
-            <h2 class="mb-10 text-[#544C43] text-[20px] leading-[23px] tracking-[-0.01em] font-normal font-abc-arizona-flare-variable">Challenges and Inefficiencies in the Current System</h2>
-            <p class="text-[#544C43] text-[18px] leading-[27px] font-normal mb-3">This bears repeating: we should legislate and regulate and do what we can to solve the environmental and social problems that we face. But we should also operate our planning system on the assumption that those regulations work.</p>
-            <p class="text-[#544C43] text-[18px] leading-[27px] font-normal mb-3">Instead, the status quo is such that we overload our planning system with superfluous requirements which in many cases do little to make development more acceptable to local communities, and in all cases make it more expensive, difficult, risky, and therefore less likely to happen.</p>
-            <p class="text-[#544C43] text-[18px] leading-[27px] font-normal mb-3">There is a general form of argument why this sort of overloading this is okay: the built environment is a public good, changes to the quality or distribution of this public good will cause externalities that we might wish to control, and the planning system allows us to control the built environment. Therefore we should use the planning system to control these externalities.</p>
-            <p class="text-[#544C43] text-[18px] leading-[27px] font-normal mb-3">But this is of course not a valid argument. The existence of externalities caused by the existence of buildings doesn’t mean that the planning system is the right place to address those externalities: you could just as easily say that humans cause increased CO2 emissions, so our environmental policy should be implemented by midwives.</p>
-            <p class="text-[#544C43] text-[18px] leading-[27px] font-normal mb-3">It’s clearly not good for the developers. But it’s also not good for the councils. Regulatory demands often exceed the capacity of council staff, stretching limited resources and potentially leading to compromised assessments, which cost the council far more in appeals. What we’ve done, in economic terms, is tried to internalise negative externalities by increasing transaction costs. This distorts the market: fewer houses get built and councils lose the leverage they had to begin with.</p>
-            <p class="text-[#544C43] text-[18px] leading-[27px] font-normal mb-[50px]">There are costs to more building. Roads get busier, schools have fewer places, more water is drawn and more pollution is emitted. But this sort of thinking ignores the entire other side of the balance sheet. <span class="underline underline-offset-[6px]">More, denser housing means greater tax revenues and economic growth, more efficient employment markets, less pollution, better health outcomes</span>.</p>
+            <h4 class="mb-10 text-[#544C43] text-[20px] leading-[23px] tracking-[-0.01em] font-normal font-abc-arizona-flare-variable">Challenges and Inefficiencies in the Current System</h4>
+            <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal mb-3">This bears repeating: we should legislate and regulate and do what we can to solve the environmental and social problems that we face. But we should also operate our planning system on the assumption that those regulations work.</p>
+            <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal mb-3">Instead, the status quo is such that we overload our planning system with superfluous requirements which in many cases do little to make development more acceptable to local communities, and in all cases make it more expensive, difficult, risky, and therefore less likely to happen.</p>
+            <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal mb-3">There is a general form of argument why this sort of overloading this is okay: the built environment is a public good, changes to the quality or distribution of this public good will cause externalities that we might wish to control, and the planning system allows us to control the built environment. Therefore we should use the planning system to control these externalities.</p>
+            <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal mb-3">But this is of course not a valid argument. The existence of externalities caused by the existence of buildings doesn’t mean that the planning system is the right place to address those externalities: you could just as easily say that humans cause increased CO2 emissions, so our environmental policy should be implemented by midwives.</p>
+            <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal mb-3">It’s clearly not good for the developers. But it’s also not good for the councils. Regulatory demands often exceed the capacity of council staff, stretching limited resources and potentially leading to compromised assessments, which cost the council far more in appeals. What we’ve done, in economic terms, is tried to internalise negative externalities by increasing transaction costs. This distorts the market: fewer houses get built and councils lose the leverage they had to begin with.</p>
+            <p class="text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal mb-[50px]">There are costs to more building. Roads get busier, schools have fewer places, more water is drawn and more pollution is emitted. But this sort of thinking ignores the entire other side of the balance sheet. <span class="underline underline-offset-[6px]">More, denser housing means greater tax revenues and economic growth, more efficient employment markets, less pollution, better health outcomes</span>.</p>
             
-            <div class="mt-20">
-                <img src="./assets/artical2.svg" alt="artical" >
+            <div class="mt-14 md:mt-20">
+                <img src="./assets/artical2.svg" alt="artical" class="md:block hidden" >
+                <img src="./assets/article5.svg" alt="artical" class="md:hidden block" >
             </div>
-            <div class="pt-20 pb-10 flex items-center justify-center">
-                <img src="./assets/divider2.svg" alt="divider" >
+            <div class="pt-10 md:pt-20 pb-10 flex items-center justify-center">
+                <img src="./assets/divider2.svg" alt="divider" class="md:w-[187px] w-[200px]" >
             </div>
-            <h5 class="mb-10 text-[#544C43] text-[12px] leading-[16px] tracking-[0.04em] font-normal font-mallory-trial">Potential Solutions and Policy Recommendations</h5>
+            <h5 class="mb-[30px] md:mb-10 text-[#544C43] text-[14px] leading-[16px] tracking-[0.04em] font-normal font-mallory-trial">Potential Solutions and Policy Recommendations</h5>
             <div>
-                <h3 class="mb-2 text-[#544C43] text-[18px] leading-[27px] font-normal">The status quo is broken. So the question is: why do councils allow it? I have a few pet theories:</h3>
+                <h3 class="mb-2 text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">The status quo is broken. So the question is: why do councils allow it? I have a few pet theories:</h3>
                 <ul class="mb-2">
-                    <li class="list-square ml-5 text-[#544C43] text-[18px] leading-[27px] font-normal">It’s a form of availability bias: the planning system is the one major discretionary power that councils have. If all you wield is a planning officer, everything will look like a planning problem.</li>
-                    <li class="list-square ml-5 text-[#544C43] text-[18px] leading-[27px] font-normal mt-2">The value uplift of granting planning permission goes to the landowners, and we don’t have effective ways – like a land value tax – of taxing it. Section 106 contributions, CIL, affordable housing requirements, etc., are structured in strange ways that make it difficult to spend the revenue collected in a flexible manner. So councils make demands as part of the planning application itself.</li>
-                    <li class="list-square ml-5 text-[#544C43] text-[18px] leading-[27px] font-normal mt-2">The benefits are most legible nationally, but the costs remain stubbornly local.</li>
+                    <li class="list-square ml-5 text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">It’s a form of availability bias: the planning system is the one major discretionary power that councils have. If all you wield is a planning officer, everything will look like a planning problem.</li>
+                    <li class="list-square ml-5 text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal mt-2">The value uplift of granting planning permission goes to the landowners, and we don’t have effective ways – like a land value tax – of taxing it. Section 106 contributions, CIL, affordable housing requirements, etc., are structured in strange ways that make it difficult to spend the revenue collected in a flexible manner. So councils make demands as part of the planning application itself.</li>
+                    <li class="list-square ml-5 text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal mt-2">The benefits are most legible nationally, but the costs remain stubbornly local.</li>
                 </ul>
             </div>
-            <div class="mt-2 mb-[80px]">
-                <h3 class="mb-2 text-[#544C43] text-[18px] leading-[27px] font-normal">But I suspect that the real reason is that councillors just don’t like development. Environmentalists just don’t like development. Local residents just don’t like development. We have reached an equilibrium where we are structurally unambitious, and those who want to preserve that equilibrium will use whatever mechanism they can to throw sand in the gears.</h3>
+            <div class="mt-2 mb-[40px] md:mb-[80px]">
+                <h3 class="mb-2 text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">But I suspect that the real reason is that councillors just don’t like development. Environmentalists just don’t like development. Local residents just don’t like development. We have reached an equilibrium where we are structurally unambitious, and those who want to preserve that equilibrium will use whatever mechanism they can to throw sand in the gears.</h3>
                 <ul class="mb-2">
-                    <li class="list-decimal ml-5 text-[#544C43] text-[18px] leading-[27px] font-normal">It’s a form of availability bias: the planning system is the one major discretionary power that councils have. If all you wield is a planning officer, everything will look like a planning problem.</li>
-                    <li class="list-decimal ml-5 text-[#544C43] text-[18px] leading-[27px] font-normal mt-2">The value uplift of granting planning permission goes to the landowners, and we don’t have effective ways – like a land value tax – of taxing it. Section 106 contributions, CIL, affordable housing requirements, etc., are structured in strange ways that make it difficult to spend the revenue collected in a flexible manner. So councils make demands as part of the planning application itself.</li>
-                    <li class="list-decimal ml-5 text-[#544C43] text-[18px] leading-[27px] font-normal mt-2">The benefits are most legible nationally, but the costs remain stubbornly local.</li>
+                    <li class="list-decimal ml-5 text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal">It’s a form of availability bias: the planning system is the one major discretionary power that councils have. If all you wield is a planning officer, everything will look like a planning problem.</li>
+                    <li class="list-decimal ml-5 text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal mt-2">The value uplift of granting planning permission goes to the landowners, and we don’t have effective ways – like a land value tax – of taxing it. Section 106 contributions, CIL, affordable housing requirements, etc., are structured in strange ways that make it difficult to spend the revenue collected in a flexible manner. So councils make demands as part of the planning application itself.</li>
+                    <li class="list-decimal ml-5 text-[#544C43] text-[17px] md:text-[18px] leading-[25px] md:leading-[27px] font-normal mt-2">The benefits are most legible nationally, but the costs remain stubbornly local.</li>
                 </ul>
             </div>
         </div>
 
-        <div class="border-y border-[#D2CCC6] mb-10 max-w-[706px] w-full mx-auto p-10 flex flex-col items-center">
-            <h3 class="text-[#544C43] text-[15px] leading-[22.5px] font-test-martina-plantijn-italic font-normal mb-2">Words by</h3>
-            <h4 class="text-[#544C43] text-[12px] leading-[16px] font-normal font-mallory-trial tracking-[0.04em] uppercase">Jamie Rumbelow</h4>
-            <p class="mt-4 text-[#544C43] text-[15px] leading-[22.5px] font-normal max-w-[565px] mx-auto text-center">Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Massa ultricies mi quis hendrerit dolor. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Gravida arcu ac tortor dignissim convallis aenean et tortor at. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim.</p>
+        <div class="px-5">
+            <div class="border-y border-[#D2CCC6] mb-10 max-w-[706px] w-full mx-auto px-4 py-5 md:p-10 flex flex-col items-center"> 
+                <h3 class="text-[#544C43] text-[15px] leading-[22.5px] font-test-martina-plantijn-italic font-normal">Words by</h3>
+                <h4 class="mt-2 md:mt-0 text-[#544C43] text-[12px] leading-[16px] font-normal font-mallory-trial tracking-[0.04em] uppercase border-[#D2CCC6] border md:border-0 py-1.5 px-3 md:p-0 rounded-[50px] md:rounded-0">Jamie Rumbelow</h4>
+                <p class="mt-4 text-[#544C43] text-[15px] leading-[22.5px] font-normal max-w-[565px] mx-auto text-center">Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Massa ultricies mi quis hendrerit dolor. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Gravida arcu ac tortor dignissim convallis aenean et tortor at. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim.</p>
+            </div>
         </div>
         <div class="max-w-[706px] mx-auto w-full mb-[100px] flex items-center justify-center gap-2.5">
             <div class="border border-[#D2CCC6] rounded-[5px] w-[48px] h-[21px] text-[#544C43] text-[12px] leading-[16px] tracking-[0.04em] font-mallory-trial font-normal flex items-center justify-center">TAG</div>
