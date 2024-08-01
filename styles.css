@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "TestMartinaPlantijn-Italic";
+  src: url("./assets/fonts/TestMartinaPlantijn-Italic-BF663c36d1ed0f9.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "ABCArizonaFlareVariable-Trial";
   src: url("./assets/fonts/ABCArizonaFlareVariable-Trial.ttf")
     format("truetype");
@@ -23,6 +31,12 @@
 
 body {
   font-family: "TestMartinaPlantijn-Regular", sans-serif;
+}
+
+
+
+.font-test-martina-plantijn-italic {
+  font-family: "TestMartinaPlantijn-Italic", sans-serif;
 }
 
 .font-abc-arizona-flare-variable {
