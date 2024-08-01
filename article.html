@@ -6,21 +6,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Article</title>
-    <style>
-      .scrolled {
-        background-color: white !important;
-        border-bottom: 1px solid #d2ccc6;
-      }
-      .scrolled .logo-with-text {
-        display: none !important;
-      }
-      .scrolled .logo-text-holder {
-        display: none !important;
-      }
-      .scrolled .logo-text {
-        display: flex !important;
-      }
-    </style>
   </head>
   <body>
     <!-- Navbar Start -->
@@ -762,35 +747,6 @@
     </footer>
     <!-- Footer End -->
 
-    <script>
-      // JavaScript for mobile menu toggle
-      const menuToggle = document.getElementById("menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const closeMenu = document.getElementById("close-menu");
-      const navLinks = document.querySelectorAll("#mobile-menu a");
-
-      menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.remove("-translate-x-full");
-      });
-
-      closeMenu.addEventListener("click", () => {
-        mobileMenu.classList.add("-translate-x-full");
-      });
-
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.add("-translate-x-full");
-        });
-      });
-
-      // Change navbar background on scroll
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

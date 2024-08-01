@@ -33,8 +33,6 @@ body {
   font-family: "TestMartinaPlantijn-Regular", sans-serif;
 }
 
-
-
 .font-test-martina-plantijn-italic {
   font-family: "TestMartinaPlantijn-Italic", sans-serif;
 }
@@ -53,7 +51,62 @@ body {
   box-sizing: border-box;
 }
 
-.list-square{
-  list-style:square;
+.list-square {
+  list-style: square;
 }
 
+/* header */
+.scrolled {
+  background-color: #fefcf2 !important;
+  border-bottom: 1px solid #d2ccc6;
+}
+.scrolled .logo-with-text {
+  display: none !important;
+}
+.scrolled .logo-text-holder {
+  display: none !important;
+}
+.scrolled .logo-text {
+  display: flex !important;
+}
+
+/* Hide the default dropdown arrow */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+}
+
+.custom-select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px; /* Adjust position as needed */
+  transform: translateY(-50%);
+  width: 9px;
+  height: 13px;
+  background: url('data:image/svg+xml,%3Csvg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M5.09361 11.2051L5.09361 0.447769L4.36355 0.447769L4.36355 11.167L1.06987 7.95974L0.560547 8.48278L4.4875 12.3067L4.73963 12.5522L4.9942 12.3092L9.00024 8.48531L8.49616 7.95721L5.09361 11.2051Z" fill="%23544C43"/%3E%3C/svg%3E')
+    no-repeat center;
+  pointer-events: none;
+}
+
+/* switch */
+.dot {
+  transition: all 0.3s ease;
+}
+
+.toggle-active .dot {
+  transform: translateX(22px);
+  background-color: #fefcf2 !important;
+}
+
+.toggle-active .line {
+  background-color: #8ea75f; /* Color when toggle is active */
+}

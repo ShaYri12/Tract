@@ -13,62 +13,6 @@
       referrerpolicy="no-referrer"
     />
     <title>Blogs</title>
-    <style>
-      .scrolled {
-        background-color: #fefcf2 !important;
-        border-bottom: 1px solid #d2ccc6;
-      }
-      .scrolled .logo-with-text {
-        display: none !important;
-      }
-      .scrolled .logo-text-holder {
-        display: none !important;
-      }
-      .scrolled .logo-text {
-        display: flex !important;
-      }
-
-      /* Hide the default dropdown arrow */
-      .custom-select {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-      }
-
-      .custom-select select {
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        background: transparent;
-      }
-
-      .custom-select::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 16px; /* Adjust position as needed */
-        transform: translateY(-50%);
-        width: 9px;
-        height: 13px;
-        background: url('data:image/svg+xml,%3Csvg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M5.09361 11.2051L5.09361 0.447769L4.36355 0.447769L4.36355 11.167L1.06987 7.95974L0.560547 8.48278L4.4875 12.3067L4.73963 12.5522L4.9942 12.3092L9.00024 8.48531L8.49616 7.95721L5.09361 11.2051Z" fill="%23544C43"/%3E%3C/svg%3E')
-          no-repeat center;
-        pointer-events: none;
-      }
-
-      /* switch */
-      .dot {
-        transition: all 0.3s ease;
-      }
-
-      .toggle-active .dot {
-        transform: translateX(22px);
-        background-color: #fefcf2 !important;
-      }
-
-      .toggle-active .line {
-        background-color: #8ea75f; /* Color when toggle is active */
-      }
-    </style>
   </head>
   <body>
     <!-- Navbar Start -->
@@ -596,48 +540,6 @@
     </footer>
     <!-- Footer End -->
 
-    <script>
-      // JavaScript for mobile menu toggle
-      const menuToggle = document.getElementById("menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const closeMenu = document.getElementById("close-menu");
-      const navLinks = document.querySelectorAll("#mobile-menu a");
-
-      menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.remove("-translate-x-full");
-      });
-
-      closeMenu.addEventListener("click", () => {
-        mobileMenu.classList.add("-translate-x-full");
-      });
-
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.add("-translate-x-full");
-        });
-      });
-
-      // Change navbar background on scroll
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggle = document.getElementById("toggleB");
-        const relativeDiv = toggle.parentElement;
-
-        toggle.addEventListener("change", function () {
-          if (this.checked) {
-            relativeDiv.classList.add("toggle-active");
-          } else {
-            relativeDiv.classList.remove("toggle-active");
-          }
-        });
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
