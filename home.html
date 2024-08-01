@@ -26,7 +26,7 @@
     <!-- Navbar Start -->
     <header
       id="navbar"
-      class="fixed w-full uppercase text-[#544C43] bg-transparent body-font px-[20px] py-[8px] transition-colors duration-300"
+      class="fixed w-full uppercase text-[#544C43] body-font px-[20px] py-[8px] transition-colors duration-300"
     >
       <div
         class="container mx-auto flex flex-wrap items-center justify-between"
@@ -40,20 +40,7 @@
             <img src="./assets/Tract.svg" alt="Logo" />
           </a>
           <button id="menu-toggle" class="block text-gray-900">
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
+            <img src="./assets/Burger.svg" alt="Menu" />
           </button>
         </div>
 
@@ -97,7 +84,7 @@
         <!-- Mobile Menu -->
         <div
           id="mobile-menu"
-          class="lg:hidden fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-300"
+          class="lg:hidden border-b border-b-[#D2CCC6] bg-white fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-300"
         >
           <div class="flex justify-end p-[20px]">
             <button
@@ -147,9 +134,11 @@
     <!-- Navbar End -->
 
     <!-- Hero Section Start -->
-    <div class="flex h-screen bg-[#FEFCF2] border-b border-b-[#D2CCC6]">
+    <div
+      class="flex md:flex-row flex-col h-screen bg-[#FEFCF2] border-b border-b-[#D2CCC6]"
+    >
       <div
-        class="w-1/2 font-[400] text-[#544C43] h-full lg:px-[60px] md:px-[30px] flex flex-col gap-[40px] my-auto items-center justify-center text-center"
+        class="md:w-1/2 w-full font-[400] text-[#544C43] h-full lg:px-[60px] md:px-[30px] flex flex-col gap-[40px] my-auto items-center justify-center text-center"
       >
         <h1 class="uppercase text-[52px] tracking-[2%] leading-[54.6px]">
           Let's build <br />
@@ -160,9 +149,9 @@
           problem.
         </p>
       </div>
-      <div class="w-1/2">
+      <div class="md:w-1/2 w-full">
         <img
-          class="object-cover w-full h-full"
+          class="object-cover w-full md:h-full h-[345px]"
           width="100%"
           src="./assets/hero-img.png"
           alt="heroImg"
