@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Product</title>
+    <style>
+      .scrolled {
+        background-color: white !important;
+        border-bottom: 1px solid #d2ccc6;
+      }
+      .scrolled .logo-with-text {
+        display: none !important;
+      }
+      .scrolled .logo-text-holder {
+        display: none !important;
+      }
+      .scrolled .logo-text {
+        display: flex !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header
+      id="navbar"
+      class="fixed w-full font-abc-arizona-flare-variable lg:bg-transparent bg-[#FEFCF2] uppercase text-[#544C43] px-[20px] py-[8px] transition-colors duration-300"
+    >
+      <div
+        class="container mx-auto flex flex-wrap items-center justify-between"
+      >
+        <!-- Mobile menu button -->
+        <div class="lg:hidden flex w-full justify-between items-center">
+          <a
+            href="#"
+            class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
+          >
+            <img src="./assets/Tract.svg" alt="Logo" />
+          </a>
+          <button id="menu-toggle" class="block text-gray-900">
+            <img src="./assets/Burger.svg" alt="Menu" />
+          </button>
+        </div>
+
+        <div
+          class="hidden lg:flex container mx-auto flex flex-wrap flex-col md:flex-row items-center"
+        >
+          <nav
+            class="flex lg:w-2/5 flex-wrap gap-[48px] items-center text-base md:ml-auto"
+          >
+            <a href="./index.html#introduction" class="hover:text-gray-900"
+              >Introduction</a
+            >
+            <a href="./products.html" class="hover:text-gray-900">Products</a>
+            <a href="#" class="hover:text-gray-900">Careers</a>
+          </nav>
+
+          <a
+            href="./index.html"
+            class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
+          >
+            <div class="logo-text-holder block w-[98px]"></div>
+            <img class="logo-text hidden" src="./assets/Tract.svg" alt="Logo" />
+          </a>
+          <a
+            href="./index.html"
+            class="logo-with-text flex flex-col absolute top-[8px] left-1/2 transform -translate-x-1/2 gap-[29px] order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
+          >
+            <img
+              class="w-[27.25px] h-[29.24px]"
+              src="./assets/TractLogo.svg"
+              alt="Logo"
+            />
+            <img src="./assets/Tract.svg" alt="Logo" />
+          </a>
+          <div
+            class="lg:w-2/5 inline-flex flex gap-[48px] lg:justify-end ml-5 lg:ml-0"
+          >
+            <a href="./index.html#team" class="hover:text-gray-900">Team</a>
+            <a href="./index.html#contact" class="hover:text-gray-900"
+              >Contact</a
+            >
+            <a href="./blogs.html" class="hover:text-gray-900">Blog</a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="lg:hidden border-b border-b-[#D2CCC6] bg-white fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-300"
+        >
+          <div class="flex justify-end p-[20px]">
+            <button
+              id="close-menu"
+              class="text-[#544C43] text-[12px] leading-[12px] tracking-[4%] border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase"
+            >
+              Close
+            </button>
+          </div>
+          <nav
+            class="flex text-[14px] text-[#544C43] leading-[17.25px] tracking-[4%] flex-col items-center gap-[51px] mt-12"
+          >
+            <a
+              href="./index.html#introduction"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Introduction</a
+            >
+            <a
+              href="./products.html"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Products</a
+            >
+            <a
+              href="#"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Careers</a
+            >
+            <a
+              href="./index.html#team"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Team</a
+            >
+            <a
+              href="./index.html#contact"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Contact</a
+            >
+            <a
+              href="./blogs.html"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Blog</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <div
+      class="bg-[#FEFCF2] w-full flex lg:flex-row flex-col-reverse gap-12 lg:gap-2 justify-between items-center lg:pt-[124px] pb-10 lg:pb-[116px] border-b border-[#D2CCC6]"
+    >
+      <div class="lg:w-1/2">
+        <div
+          class="max-w-[453px] w-full mx-auto text-center items-center flex flex-col gap-10 px-5"
+        >
+          <h2
+            class="font-abc-arizona-flare-variable uppercase text-[#544C43] text-[40px] md:text-[52px] leading-[42px] md:leading-[54px] tracking-[0.02em] font-normal"
+          >
+            at.tract.build
+          </h2>
+          <p
+            class="text-[#544C43] text-[20px] md:text-[22px] leading-[28px] md:leading-[27px] font-normal"
+          >
+            Generate a free, instant appraisal for your land, based on the
+            site's features and the sort of development you'd like it to host.
+          </p>
+          <button
+            class="bg-[#8EA75F] text-white w-[141px] h-[28px] rounded-[50px] text-[12px] leading-[16px] tracking-[0.04em]"
+          >
+            Start Now
+          </button>
+        </div>
+      </div>
+      <div class="lg:w-1/2 px-5 md:px-[50px] xl:px-[110px]">
+        <img
+          src="./assets/product-hero.svg"
+          alt="product-hero"
+          width="500px"
+          height="626px"
+        />
+      </div>
+    </div>
+
+    <!-- Your Future -->
+    <div
+      class="md:py-[100px] pt-0 pb-[50px] flex flex-col items-center justify-center text-center"
+    >
+      <div class="bg-[#544C43] text-white md:hidden block py-14 px-5">
+        <h4
+          class="text-[12px] leading-[16px] tracking-[0.04em] uppercase mb-3.5 font-abc-arizona-flare-variable"
+        >
+          your future
+        </h4>
+        <h2
+          class="uppercase text-[28px] leading-[29.6px] tracking-[0.02em] font-abc-arizona-flare-variable font-normal"
+        >
+          is my land suitable for development?
+        </h2>
+        <p class="mt-3.5 text-[20px] leading-[28px] font-normal">
+          We can generate an appraisal for any site
+          <span class="italic font-test-martina-plantijn-italic"
+            >larger than half an acre (~2023 m2) in England.</span
+          >
+        </p>
+      </div>
+
+      <div class="md:block hidden">
+        <h4
+          class="text-[#544C43] text-[12px] leading-[16px] tracking-[0.04em] uppercase mb-3.5 font-abc-arizona-flare-variable"
+        >
+          your future
+        </h4>
+        <h2
+          class="uppercase text-[#544C43] text-[32px] leading-[33.6px] tracking-[0.02em] font-abc-arizona-flare-variable font-normal"
+        >
+          is my land suitable for development?
+        </h2>
+        <p
+          class="mt-16 text-[22px] leading-[27px] font-normal text-[#544C43] max-w-[640px] w-full mx-auto"
+        >
+          We can generate an appraisal for any site
+          <span class="italic font-test-martina-plantijn-italic"
+            >larger than half an acre (~2023 m2) in England.</span
+          >
+        </p>
+      </div>
+
+      <h2
+        class="mt-[50px] md:mt-16 uppercase text-[#544C43] text-[16px] leading-[16.8px] font-abc-arizona-flare-variable font-normal tracking-[0.02em]"
+      >
+        What you will get
+      </h2>
+      <div class="px-5">
+        <div
+          class="mt-5 md:mt-10 border border-[#D2CCC6] px-4 md:px-5 py-9 max-w-[640px] w-full mx-auto text-left"
+        >
+          <p class="text-[#544C43] text-[15px] font-normal leading-[22.5px]">
+            You can download a property summary, which includes:
+          </p>
+          <ul class="mt-1.5 ml-5">
+            <li
+              class="list-disc text-[#544C43] text-[15px] font-normal leading-[22.5px]"
+            >
+              a 'location plan' - a map of the site with a red line round its
+              boundary
+            </li>
+            <li
+              class="mt-0.5 list-disc text-[#544C43] text-[15px] font-normal leading-[22.5px]"
+            >
+              a description of the property's planning constraints
+            </li>
+          </ul>
+          <p
+            class="mt-1.5 text-[#544C43] text-[15px] font-normal leading-[22.5px]"
+          >
+            We'll also introduce you to a land agent or developer who knows your
+            area and can help you begin the process of developing and selling
+            your land.
+          </p>
+        </div>
+      </div>
+
+      <h2
+        class="mt-10 md:mt-16 uppercase text-[#544C43] text-[16px] leading-[16.8px] font-abc-arizona-flare-variable font-normal tracking-[0.02em]"
+      >
+        What will it cost?
+      </h2>
+      <div class="px-5 w-full">
+        <div
+          class="mt-5 border border-[#D2CCC6] p-5 max-w-[640px] w-full mx-auto text-center"
+        >
+          <p class="text-[#544C43] text-[15px] font-normal leading-[22.5px]">
+            Nothing! This service is totally
+            <span class="italic font-test-martina-plantijn-italic">free</span>.
+          </p>
+        </div>
+      </div>
+      <button
+        class="mt-10 md:mt-16 bg-[#8EA75F] w-[141px] h-[28px] rounded-[50px] text-white text-[12px] leading-[16px] tracking-[0.04em]"
+      >
+        Start Now
+      </button>
+    </div>
+
+    <!-- Footer Start -->
+    <footer
+      class="flex flex-col md:py-[100px] py-[30px] lg:px-[250px] md:px-[180px] px-[20px] bg-[#8EA75F] text-center text-[#544C43] font-[400]"
+    >
+      <div class="flex flex-col gap-[40px]">
+        <span
+          class="uppercase font-mallory-trial text-[12px] leading-[16px] tracking-[4%]"
+          >Open Source</span
+        >
+        <p
+          class="md:text-[32px] text-[20px] md:leading-[40.1px] leading-[25.06px]"
+        >
+          Our mission to build one million houses requires collaboration. We’ve
+          made our our code base
+          <span class="underline font-test-martina-plantijn-italic"
+            >available open source</span
+          >
+          to allow iteration, experimentation and ultimately increase innovative
+          potential of our products.
+        </p>
+      </div>
+
+      <div
+        id="contact"
+        class="flex flex-col gap-[40px] md:pt-[100px] pt-[40px] md:pb-[120px] pb-[40px]"
+      >
+        <span
+          class="uppercase font-mallory-trial text-[12px] leading-[16px] tracking-[4%]"
+          >Contact</span
+        >
+        <p
+          class="md:text-[32px] text-[20px] md:leading-[40.1px] leading-[25.06px]"
+        >
+          If you would like to help, or are interested in using our
+          platform, send us an
+          <span class="underline font-test-martina-plantijn-italic">email</span
+          >, or speak to
+          <span class="underline font-test-martina-plantijn-italic">Jamie</span
+          >.
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center md:pb-[120px] pb-[40px]">
+        <img src="./assets/TractLogo.svg" alt="Logo" />
+      </div>
+
+      <div
+        class="font-mallory-trial grid lg:grid-cols-4 grid-cols-2 items-center font-[400] text-[12px] leading-[16.8px] justify-between gap-[7px]"
+      >
+        <span class="lg:text-center text-left">Copyright © 2024 Tract</span>
+        <a class="lg:text-center text-right" href="#">Privacy Policy</a>
+        <a class="lg:text-center text-left" href="#">Terms and Conditions</a>
+        <span class="lg:text-center text-right">Designed by And-Now</span>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+      // JavaScript for mobile menu toggle
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeMenu = document.getElementById("close-menu");
+      const navbar = document.getElementById("navbar");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.remove("-translate-x-full");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("-translate-x-full");
+      });
+
+      // Change navbar background on scroll
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>

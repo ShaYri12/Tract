@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      /* Custom styles to transition background color on scroll */
       .scrolled {
         background-color: white !important;
+        border-bottom: 1px solid #d2ccc6;
       }
       .scrolled .logo-with-text {
         display: none !important;
@@ -26,7 +26,7 @@
     <!-- Navbar Start -->
     <header
       id="navbar"
-      class="fixed w-full font-abc-arizona-flare-variable uppercase text-[#544C43] px-[20px] py-[8px] transition-colors duration-300"
+      class="fixed w-full font-abc-arizona-flare-variable lg:bg-transparent bg-[#FEFCF2] uppercase text-[#544C43] px-[20px] py-[8px] transition-colors duration-300"
     >
       <div
         class="container mx-auto flex flex-wrap items-center justify-between"
@@ -50,19 +50,22 @@
           <nav
             class="flex lg:w-2/5 flex-wrap gap-[48px] items-center text-base md:ml-auto"
           >
-            <a href="#" class="hover:text-gray-900">Introduction</a>
-            <a href="product.html" class="hover:text-gray-900">Products</a>
+            <a href="./index.html#introduction" class="hover:text-gray-900"
+              >Introduction</a
+            >
+            <a href="./products.html" class="hover:text-gray-900">Products</a>
             <a href="#" class="hover:text-gray-900">Careers</a>
           </nav>
+
           <a
-            href="#"
+            href="./index.html"
             class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
           >
             <div class="logo-text-holder block w-[98px]"></div>
             <img class="logo-text hidden" src="./assets/Tract.svg" alt="Logo" />
           </a>
           <a
-            href="#"
+            href="./index.html"
             class="logo-with-text flex flex-col absolute top-[8px] left-1/2 transform -translate-x-1/2 gap-[29px] order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
           >
             <img
@@ -75,9 +78,11 @@
           <div
             class="lg:w-2/5 inline-flex flex gap-[48px] lg:justify-end ml-5 lg:ml-0"
           >
-            <a href="#" class="hover:text-gray-900">Team</a>
-            <a href="#" class="hover:text-gray-900">Contact</a>
-            <a href="#" class="hover:text-gray-900">Blog</a>
+            <a href="./index.html#team" class="hover:text-gray-900">Team</a>
+            <a href="./index.html#contact" class="hover:text-gray-900"
+              >Contact</a
+            >
+            <a href="./blogs.html" class="hover:text-gray-900">Blog</a>
           </div>
         </div>
 
@@ -98,12 +103,12 @@
             class="flex text-[14px] text-[#544C43] leading-[17.25px] tracking-[4%] flex-col items-center gap-[51px] mt-12"
           >
             <a
-              href="#"
+              href="./index.html#introduction"
               class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
               >Introduction</a
             >
             <a
-              href="#"
+              href="./products.html"
               class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
               >Products</a
             >
@@ -113,17 +118,17 @@
               >Careers</a
             >
             <a
-              href="#"
+              href="./index.html#team"
               class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
               >Team</a
             >
             <a
-              href="#"
+              href="./index.html#contact"
               class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
               >Contact</a
             >
             <a
-              href="#"
+              href="./blogs.html"
               class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
               >Blog</a
             >
@@ -135,10 +140,10 @@
 
     <!-- Hero Section Start -->
     <div
-      class="flex md:flex-row flex-col h-screen bg-[#FEFCF2] border-b border-b-[#D2CCC6]"
+      class="flex md:flex-row flex-col md:gap-0 gap-[30px] md:h-screen bg-[#FEFCF2] border-b border-b-[#D2CCC6]"
     >
       <div
-        class="md:w-1/2 w-full font-[400] text-[#544C43] h-full lg:px-[60px] md:px-[30px] flex flex-col gap-[40px] my-auto items-center justify-center text-center"
+        class="md:mt-0 mt-[80px] md:w-1/2 w-full font-[400] text-[#544C43] h-full lg:px-[60px] md:px-[30px] flex flex-col gap-[40px] my-auto items-center justify-center text-center"
       >
         <h1
           class="font-abc-arizona-flare-variable uppercase text-[52px] tracking-[2%] leading-[54.6px]"
@@ -151,10 +156,9 @@
           problem.
         </p>
       </div>
-      <div class="md:w-1/2 w-full">
+      <div class="md:w-1/2 w-full md:h-full h-[345px]">
         <img
-          class="object-cover w-full md:h-full h-[345px]"
-          width="100%"
+          class="object-cover h-full w-full"
           src="./assets/hero-img.png"
           alt="heroImg"
         />
@@ -164,7 +168,8 @@
 
     <!-- Who We Are Section Start -->
     <div
-      class="flex flex-col gap-[60px] md:py-[100px] py-[50px] lg:px-[200px] md:px-[100px] px-[20px] text-[#544C43] text-center bg-transparent"
+      id="introduction"
+      class="flex flex-col md:gap-[60px] gap-[30px] md:py-[100px] pt-[100px] pb-[50px] lg:px-[200px] md:px-[100px] px-[20px] text-[#544C43] text-center bg-transparent"
     >
       <div class="flex flex-col items-center justify-center gap-[14px]">
         <span
@@ -177,20 +182,25 @@
           WHO WE ARE
         </h2>
       </div>
-      <div class="flex flex-col text-[22px] leading-[27.57px] gap-[7px]">
+      <div class="flex flex-col text-[22px] leading-[27.57px] gap-[10px]">
         <p>
           Tract is building the platform for planning. We believe that housing
           is the
-          <span class="italic">largest domestic political problem</span> that
-          the United Kingdom faces, and that the planning system is the biggest
-          barrier to solving it. Our software lets you reason about planning
-          risk, develop applications, and work an application through the
-          permitting process. We do machine learning, geospatial data, carefully
-          designed UIs, and a lot of things that don't scale.
+          <span class="font-test-martina-plantijn-italic"
+            >largest domestic political problem</span
+          >
+          that the United Kingdom faces, and that the planning system is the
+          biggest barrier to solving it. Our software lets you reason about
+          planning risk, develop applications, and work an application through
+          the permitting process. We do machine learning, geospatial data,
+          carefully designed UIs, and a lot of things that don't scale.
         </p>
         <p>
-          We are going to build <span class="italic">one million homes</span> in
-          the next ten years.
+          We are going to build
+          <span class="font-test-martina-plantijn-italic"
+            >one million homes</span
+          >
+          in the next ten years.
         </p>
       </div>
     </div>
@@ -198,7 +208,7 @@
 
     <!-- Discover Our Products Section Start -->
     <div
-      class="flex flex-col md:py-[100px] py-[50px] lg:gap-[166px] md:gap-[130px] gap-[60px] text-center items-center justify-center lg:px-[60px] md:px-[30px] px-[20px]"
+      class="flex flex-col md:py-[100px] py-[30px] lg:gap-[166px] md:gap-[130px] gap-[31px] text-center items-center justify-center lg:px-[60px] md:px-[30px] px-[20px]"
       style="
         background-image: url('./assets/discover-products-img.svg');
         background-size: cover;
@@ -219,10 +229,10 @@
       </div>
 
       <div
-        class="flex md:flex-row flex-col justify-center gap-[40px] md:pb-[100px] pb-[50px]"
+        class="flex md:flex-row flex-col justify-center gap-[40px] md:pb-[100px]"
       >
         <div
-          class="bg-[#FFB097] px-[98px] text-[#544C43] py-[60px] flex flex-col gap-[20px]"
+          class="bg-[#FFB097] md:px-[98px] px-[20px] text-[#544C43] md:py-[60px] py-[20px] flex flex-col gap-[20px]"
         >
           <div class="flex flex-col mx-auto gap-[8px]">
             <img
@@ -249,7 +259,7 @@
           </div>
         </div>
         <div
-          class="bg-[#75CDE0] px-[98px] text-[#544C43] py-[60px] flex flex-col gap-[20px]"
+          class="bg-[#75CDE0] md:px-[98px] px-[20px] text-[#544C43] md:py-[60px] py-[20px] flex flex-col gap-[20px]"
         >
           <div class="flex flex-col mx-auto gap-[8px]">
             <img
@@ -281,7 +291,8 @@
 
     <!-- Open Position Section Start -->
     <div
-      class="flex flex-col items-center text-[#544C43] justify-center gap-[60px] md:py-[100px] py-[50px] lg:px-[60px] md:px-[30px] px-[20px]"
+      id="team"
+      class="flex flex-col items-center text-[#544C43] justify-center gap-[60px] md:py-[100px] py-[50px] lg:px-[60px] px-[20px]"
     >
       <div class="flex flex-col text-center text-[#544C43] gap-[14px]">
         <span
@@ -298,143 +309,215 @@
       <div class="flex justify-center w-full gap-[40px]">
         <div class="flex flex-col w-full">
           <div
-            class="flex justify-between w-full pb-[60px] pt-[20px] border-t border-[#D2CCC6]"
+            class="flex md:flex-row flex-col w-full md:pb-[60px] md:pt-[20px] py-[30px] border-t border-[#D2CCC6] gap-[18px]"
           >
-            <span class="font-mallory-trial text-[12px] flex flex-col">
-              <h4 class="leading-[16px] tracking-[4%] uppercase">LOCATION</h4>
-              <p class="leading-[16.8px]">Remote</p>
-            </span>
             <h3
-              class="font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
+              class="md:hidden block font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
             >
               Customer service manager
             </h3>
-            <h6
-              class="text-[12px] leading-[16px] tracking-[4%] flex items-start uppercase"
-            >
-              <span class="font-mallory-trial flex items-center gap-[10px]">
-                Full Job Description
-                <svg
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+            <div class="flex justify-between w-full gap-[6px]">
+              <div
+                class="grid md:grid-cols-[auto_1fr] grid-cols-1 text-left justify-between lg:gap-[100px] md:gap-[50px] gap-[18px]"
+              >
+                <span
+                  class="md:order-1 order-2 font-mallory-trial md:gap-0 gap-[4px] w-fit text-[12px] flex flex-col"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M10.1627 4.45407L0.764038 4.45406V3.45406L10.1254 3.45407L7.47258 0.69308L8.19368 0.000244141L11.6705 3.61887L12 3.96185L11.6739 4.3081L8.19711 7.9996L7.46915 7.31398L10.1627 4.45407Z"
-                    fill="#544C43"
-                  />
-                </svg>
-              </span>
-            </h6>
+                  <h4 class="leading-[16px] tracking-[4%] uppercase">
+                    LOCATION
+                  </h4>
+                  <p class="leading-[16.8px]">Remote</p>
+                </span>
+                <h3
+                  class="md:flex hidden md:order-2 order-1 font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
+                >
+                  Customer service manager
+                </h3>
+              </div>
+
+              <h6
+                class="w-max text-[12px] leading-[16px] tracking-[4%] flex md:items-start items-end"
+              >
+                <button
+                  class="md:px-0 md:py-0 px-[12px] py-[7px] md:border-0 border border-[#D2CCC6] uppercase rounded-[50px] w-max font-mallory-trial flex items-center gap-[10px]"
+                >
+                  Full Job Description
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.1627 4.45407L0.764038 4.45406V3.45406L10.1254 3.45407L7.47258 0.69308L8.19368 0.000244141L11.6705 3.61887L12 3.96185L11.6739 4.3081L8.19711 7.9996L7.46915 7.31398L10.1627 4.45407Z"
+                      fill="#544C43"
+                    />
+                  </svg>
+                </button>
+              </h6>
+            </div>
           </div>
           <div
-            class="flex justify-between w-full pb-[60px] pt-[20px] border-t border-[#D2CCC6]"
+            class="flex md:flex-row flex-col w-full md:pb-[60px] md:pt-[20px] py-[30px] border-t border-[#D2CCC6] gap-[18px]"
           >
-            <span class="font-mallory-trial text-[12px] flex flex-col">
-              <h4 class="leading-[16px] tracking-[4%] uppercase">LOCATION</h4>
-              <p class="leading-[16.8px]">Remote</p>
-            </span>
             <h3
-              class="font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
+              class="md:hidden block font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
             >
               SALES MANAGER
             </h3>
-            <h6
-              class="text-[12px] leading-[16px] tracking-[4%] flex items-start uppercase"
-            >
-              <span class="font-mallory-trial flex items-center gap-[10px]">
-                Full Job Description
-                <svg
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+            <div class="flex justify-between w-full gap-[6px]">
+              <div
+                class="grid md:grid-cols-[auto_1fr] grid-cols-1 text-left justify-between lg:gap-[100px] md:gap-[50px] gap-[18px]"
+              >
+                <span
+                  class="md:order-1 order-2 font-mallory-trial md:gap-0 gap-[4px] w-fit text-[12px] flex flex-col"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M10.1627 4.45407L0.764038 4.45406V3.45406L10.1254 3.45407L7.47258 0.69308L8.19368 0.000244141L11.6705 3.61887L12 3.96185L11.6739 4.3081L8.19711 7.9996L7.46915 7.31398L10.1627 4.45407Z"
-                    fill="#544C43"
-                  />
-                </svg>
-              </span>
-            </h6>
+                  <h4 class="leading-[16px] tracking-[4%] uppercase">
+                    LOCATION
+                  </h4>
+                  <p class="leading-[16.8px]">Remote</p>
+                </span>
+                <h3
+                  class="md:flex hidden md:order-2 order-1 font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
+                >
+                  SALES MANAGER
+                </h3>
+              </div>
+
+              <h6
+                class="w-max text-[12px] leading-[16px] tracking-[4%] flex md:items-start items-end"
+              >
+                <button
+                  class="md:px-0 md:py-0 px-[12px] py-[7px] md:border-0 border border-[#D2CCC6] uppercase rounded-[50px] w-max font-mallory-trial flex items-center gap-[10px]"
+                >
+                  Full Job Description
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.1627 4.45407L0.764038 4.45406V3.45406L10.1254 3.45407L7.47258 0.69308L8.19368 0.000244141L11.6705 3.61887L12 3.96185L11.6739 4.3081L8.19711 7.9996L7.46915 7.31398L10.1627 4.45407Z"
+                      fill="#544C43"
+                    />
+                  </svg>
+                </button>
+              </h6>
+            </div>
           </div>
           <div
-            class="flex justify-between w-full pb-[60px] pt-[20px] border-t border-[#D2CCC6]"
+            class="flex md:flex-row flex-col w-full md:pb-[60px] md:pt-[20px] py-[30px] border-t border-[#D2CCC6] gap-[18px]"
           >
-            <span class="font-mallory-trial text-[12px] flex flex-col">
-              <h4 class="leading-[16px] tracking-[4%] uppercase">LOCATION</h4>
-              <p class="leading-[16.8px]">Remote</p>
-            </span>
             <h3
-              class="font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
+              class="md:hidden block font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
             >
               Marketing EXECUTIVE
             </h3>
-            <h6
-              class="text-[12px] leading-[16px] tracking-[4%] flex items-start uppercase"
-            >
-              <span class="font-mallory-trial flex items-center gap-[10px]">
-                Full Job Description
-                <svg
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+            <div class="flex justify-between w-full gap-[6px]">
+              <div
+                class="grid md:grid-cols-[auto_1fr] grid-cols-1 text-left justify-between lg:gap-[100px] md:gap-[50px] gap-[18px]"
+              >
+                <span
+                  class="md:order-1 order-2 font-mallory-trial md:gap-0 gap-[4px] w-fit text-[12px] flex flex-col"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M10.1627 4.45407L0.764038 4.45406V3.45406L10.1254 3.45407L7.47258 0.69308L8.19368 0.000244141L11.6705 3.61887L12 3.96185L11.6739 4.3081L8.19711 7.9996L7.46915 7.31398L10.1627 4.45407Z"
-                    fill="#544C43"
-                  />
-                </svg>
-              </span>
-            </h6>
+                  <h4 class="leading-[16px] tracking-[4%] uppercase">
+                    LOCATION
+                  </h4>
+                  <p class="leading-[16.8px]">Remote</p>
+                </span>
+                <h3
+                  class="md:flex hidden md:order-2 order-1 font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
+                >
+                  Marketing EXECUTIVE
+                </h3>
+              </div>
+
+              <h6
+                class="w-max text-[12px] leading-[16px] tracking-[4%] flex md:items-start items-end"
+              >
+                <button
+                  class="md:px-0 md:py-0 px-[12px] py-[7px] md:border-0 border border-[#D2CCC6] uppercase rounded-[50px] w-max font-mallory-trial flex items-center gap-[10px]"
+                >
+                  Full Job Description
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.1627 4.45407L0.764038 4.45406V3.45406L10.1254 3.45407L7.47258 0.69308L8.19368 0.000244141L11.6705 3.61887L12 3.96185L11.6739 4.3081L8.19711 7.9996L7.46915 7.31398L10.1627 4.45407Z"
+                      fill="#544C43"
+                    />
+                  </svg>
+                </button>
+              </h6>
+            </div>
           </div>
           <div
-            class="flex justify-between w-full pb-[60px] pt-[20px] border-t border-[#D2CCC6]"
+            class="flex md:flex-row flex-col w-full md:pb-[60px] md:pt-[20px] py-[30px] border-t border-[#D2CCC6] gap-[18px]"
           >
-            <span class="font-mallory-trial text-[12px] flex flex-col">
-              <h4 class="leading-[16px] tracking-[4%] uppercase">LOCATION</h4>
-              <p class="leading-[16.8px]">Remote</p>
-            </span>
             <h3
-              class="font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
+              class="md:hidden block font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
             >
               Marketing EXECUTIVE
             </h3>
-            <h6
-              class="text-[12px] leading-[16px] tracking-[4%] flex items-start uppercase"
-            >
-              <span class="font-mallory-trial flex items-center gap-[10px]">
-                Full Job Description
-                <svg
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+            <div class="flex justify-between w-full gap-[6px]">
+              <div
+                class="grid md:grid-cols-[auto_1fr] grid-cols-1 text-left justify-between lg:gap-[100px] md:gap-[50px] gap-[18px]"
+              >
+                <span
+                  class="md:order-1 order-2 font-mallory-trial md:gap-0 gap-[4px] w-fit text-[12px] flex flex-col"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M10.1627 4.45407L0.764038 4.45406V3.45406L10.1254 3.45407L7.47258 0.69308L8.19368 0.000244141L11.6705 3.61887L12 3.96185L11.6739 4.3081L8.19711 7.9996L7.46915 7.31398L10.1627 4.45407Z"
-                    fill="#544C43"
-                  />
-                </svg>
-              </span>
-            </h6>
+                  <h4 class="leading-[16px] tracking-[4%] uppercase">
+                    LOCATION
+                  </h4>
+                  <p class="leading-[16.8px]">Remote</p>
+                </span>
+                <h3
+                  class="md:flex hidden md:order-2 order-1 font-abc-arizona-flare-variable text-left uppercase text-[20px] leading-[21px] tracking-[2%]"
+                >
+                  Marketing EXECUTIVE
+                </h3>
+              </div>
+
+              <h6
+                class="w-max text-[12px] leading-[16px] tracking-[4%] flex md:items-start items-end"
+              >
+                <button
+                  class="md:px-0 md:py-0 px-[12px] py-[7px] md:border-0 border border-[#D2CCC6] uppercase rounded-[50px] w-max font-mallory-trial flex items-center gap-[10px]"
+                >
+                  Full Job Description
+                  <svg
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.1627 4.45407L0.764038 4.45406V3.45406L10.1254 3.45407L7.47258 0.69308L8.19368 0.000244141L11.6705 3.61887L12 3.96185L11.6739 4.3081L8.19711 7.9996L7.46915 7.31398L10.1627 4.45407Z"
+                      fill="#544C43"
+                    />
+                  </svg>
+                </button>
+              </h6>
+            </div>
           </div>
         </div>
-        <div class="w-[280px]">
+        <div class="md:flex hidden w-[280px]">
           <img
             width="100%"
             height="100%"
@@ -462,8 +545,10 @@
           OUR TEAM
         </h2>
       </div>
-      <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-[40px]">
-        <div class="flex flex-col gap-[12px]">
+      <div class="grid md:grid-cols-4 grid-cols-2 md:gap-[40px] gap-[20px]">
+        <div
+          class="flex flex-col gap-[12px] md:pb-0 pb-[20px] md-border-b-0 border-b border-b-[#D2CCC6]"
+        >
           <img
             width="100%"
             height="100%"
@@ -480,7 +565,9 @@
             <p class="text-[15px] leading-[22.5px]">Managing Director</p>
           </div>
         </div>
-        <div class="flex flex-col gap-[12px]">
+        <div
+          class="flex flex-col gap-[12px] md:pb-0 pb-[20px] md-border-b-0 border-b border-b-[#D2CCC6]"
+        >
           <img
             width="100%"
             height="100%"
@@ -497,7 +584,9 @@
             <p class="text-[15px] leading-[22.5px]">Managing Director</p>
           </div>
         </div>
-        <div class="flex flex-col gap-[12px]">
+        <div
+          class="flex flex-col gap-[12px] md:pb-0 pb-[20px] md-border-b-0 border-b border-b-[#D2CCC6]"
+        >
           <img
             width="100%"
             height="100%"
@@ -514,7 +603,9 @@
             <p class="text-[15px] leading-[22.5px]">Managing Director</p>
           </div>
         </div>
-        <div class="flex flex-col gap-[12px]">
+        <div
+          class="flex flex-col gap-[12px] md:pb-0 pb-[20px] md-border-b-0 border-b border-b-[#D2CCC6]"
+        >
           <img
             width="100%"
             height="100%"
@@ -536,8 +627,8 @@
     <!-- Our Team Section End -->
 
     <!-- Our Blog Section Start -->
-    <div class="flex h-[404px] w-full">
-      <div class="w-full h-full">
+    <div class="flex md:flex-row flex-col md:h-[404px] w-full">
+      <div class="flex md:order-1 order-2 w-full md:h-full h-[345px]">
         <img
           class="object-cover bg-top h-full"
           src="./assets/our-blog-img.svg"
@@ -547,68 +638,82 @@
         />
       </div>
       <div
-        class="max-w-[473px] w-full md:py-[100px] py-[50px] lg:px-[40px] md:px-[20px] bg-[#544C43] flex flex-col gap-[40px] items-center justify-center text-center"
+        class="md:order-2 order-1 md:max-w-[473px] w-full md:py-[100px] py-[50px] md:px-[40px] px-[20px] bg-[#544C43] flex flex-col md:gap-[40px] gap-[30px] items-center justify-center text-center"
       >
         <h2
           class="font-abc-arizona-flare-variable text-[32px] text-[#FEFCF2] leading-[33.6px] tracking-[2%] uppercase"
         >
           Our Blog
         </h2>
-        <p class="text-[15px] text-[#FEFCF2] leading-[22.5px]">
-          A blog about housing, technology, vetocracy, and a very British
-          weakness. Turpis morbi pulvinar morbi arcu ut varius morbi duis.
-          Consequat non pharetra enim nisl nisl.
-        </p>
-        <button
-          class="font-mallory-trial text-[12px] w-fit mx-auto text-[#544C43] leading-[16px] tracking-[4%] bg-[#FEFCF2] px-[20px] py-[10px] rounded-[50px] uppercase"
-        >
-          Visit blog
-        </button>
+        <div class="flex flex-col gap-[20px]">
+          <p class="text-[15px] text-[#FEFCF2] leading-[22.5px]">
+            A blog about housing, technology, vetocracy, and a very British
+            weakness. Turpis morbi pulvinar morbi arcu ut varius morbi duis.
+            Consequat non pharetra enim nisl nisl.
+          </p>
+          <button
+            class="font-mallory-trial text-[12px] w-fit mx-auto text-[#544C43] leading-[16px] tracking-[4%] bg-[#FEFCF2] px-[20px] py-[10px] rounded-[50px] uppercase"
+          >
+            Visit blog
+          </button>
+        </div>
       </div>
     </div>
     <!-- Our Blog Section End -->
 
     <!-- Footer Start -->
     <footer
-      class="flex flex-col p-[20px] lg:px-[250px] md:px-[180px] bg-[#8EA75F] text-center text-[#544C43] font-[400]"
+      class="flex flex-col md:py-[100px] py-[30px] lg:px-[250px] md:px-[180px] px-[20px] bg-[#8EA75F] text-center text-[#544C43] font-[400]"
     >
-      <div class="flex flex-col gap-[40px] pt-[80px] pb-[100px]">
+      <div class="flex flex-col gap-[40px]">
         <span
           class="uppercase font-mallory-trial text-[12px] leading-[16px] tracking-[4%]"
           >Open Source</span
         >
-        <p class="text-[32px] leading-[40.1px]">
+        <p
+          class="md:text-[32px] text-[20px] md:leading-[40.1px] leading-[25.06px]"
+        >
           Our mission to build one million houses requires collaboration. We’ve
           made our our code base
-          <span class="underline italic">available open source</span> to allow
-          iteration, experimentation and ultimately increase innovative
+          <span class="underline font-test-martina-plantijn-italic"
+            >available open source</span
+          >
+          to allow iteration, experimentation and ultimately increase innovative
           potential of our products.
         </p>
       </div>
 
-      <div class="flex flex-col gap-[40px] pb-[120px]">
+      <div
+        id="contact"
+        class="flex flex-col gap-[40px] md:pt-[100px] pt-[40px] md:pb-[120px] pb-[40px]"
+      >
         <span
           class="uppercase font-mallory-trial text-[12px] leading-[16px] tracking-[4%]"
           >Contact</span
         >
-        <p class="text-[32px] leading-[40.1px]">
+        <p
+          class="md:text-[32px] text-[20px] md:leading-[40.1px] leading-[25.06px]"
+        >
           If you would like to help, or are interested in using our
-          platform, send us an <span class="underline italic">email</span>,
-          or speak to <span class="underline italic">Jamie</span>.
+          platform, send us an
+          <span class="underline font-test-martina-plantijn-italic">email</span
+          >, or speak to
+          <span class="underline font-test-martina-plantijn-italic">Jamie</span
+          >.
         </p>
       </div>
 
-      <div class="flex items-center justify-center pb-[120px]">
+      <div class="flex items-center justify-center md:pb-[120px] pb-[40px]">
         <img src="./assets/TractLogo.svg" alt="Logo" />
       </div>
 
       <div
-        class="font-mallory-trial flex flex-wrap items-center font-[400] text-[12px] leading-[16.8px] justify-center gap-[30px] md:gap-[60px]"
+        class="font-mallory-trial grid lg:grid-cols-4 grid-cols-2 items-center font-[400] text-[12px] leading-[16.8px] justify-between gap-[7px]"
       >
-        <span>Copyright © 2024 Tract</span>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms and Conditions</a>
-        <span>Designed by And-Now</span>
+        <span class="lg:text-center text-left">Copyright © 2024 Tract</span>
+        <a class="lg:text-center text-right" href="#">Privacy Policy</a>
+        <a class="lg:text-center text-left" href="#">Terms and Conditions</a>
+        <span class="lg:text-center text-right">Designed by And-Now</span>
       </div>
     </footer>
     <!-- Footer End -->
