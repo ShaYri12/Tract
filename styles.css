@@ -1,18 +1,25 @@
-
 @font-face {
   font-family: "TestMartinaPlantijn-Regular";
-  src: url("./assets/fonts/TestMartinaPlantijn-Regular-BF663c36d1ec6d5.otf") format("opentype");
+  src: url("./assets/fonts/TestMartinaPlantijn-Regular-BF663c36d1ec6d5.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ABCArizonaFlareVariable-Trial";
-  src: url("./assets/fonts/ABCArizonaFlareVariable-Trial.ttf") format("truetype");
+  src: url("./assets/fonts/ABCArizonaFlareVariable-Trial.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Mallory-Book";
+  src: url("./assets/fonts/Mallory-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   font-family: "TestMartinaPlantijn-Regular", sans-serif;
@@ -22,6 +29,9 @@ body {
   font-family: "ABCArizonaFlareVariable-Trial", sans-serif;
 }
 
+.font-mallory-trial {
+  font-family: "Mallory-Book";
+}
 
 * {
   margin: 0;
