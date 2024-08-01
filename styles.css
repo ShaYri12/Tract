@@ -1,27 +1,40 @@
-
 @font-face {
   font-family: "TestMartinaPlantijn-Regular";
-  src: url("./assets/fonts/TestMartinaPlantijn-Regular-BF663c36d1ec6d5.otf") format("opentype");
+  src: url("./assets/fonts/TestMartinaPlantijn-Regular-BF663c36d1ec6d5.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TestMartinaPlantijn-Italic";
+  src: url("./assets/fonts/TestMartinaPlantijn-Italic-BF663c36d1ed0f9.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ABCArizonaFlareVariable-Trial";
-  src: url("./assets/fonts/ABCArizonaFlareVariable-Trial.ttf") format("truetype");
+  src: url("./assets/fonts/ABCArizonaFlareVariable-Trial.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 
 body {
   font-family: "TestMartinaPlantijn-Regular", sans-serif;
 }
 
+
+
+.font-test-martina-plantijn-italic {
+  font-family: "TestMartinaPlantijn-Italic", sans-serif;
+}
+
 .font-abc-arizona-flare-variable {
   font-family: "ABCArizonaFlareVariable-Trial", sans-serif;
 }
-
 
 * {
   margin: 0;
