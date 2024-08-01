@@ -6,34 +6,141 @@
     <title>Tract</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom styles to transition background color on scroll */
+      .scrolled {
+        background-color: white !important;
+      }
+      .scrolled .logo-with-text {
+        display: none !important;
+      }
+      .scrolled .logo-text-holder {
+        display: none !important;
+      }
+      .scrolled .logo-text {
+        display: flex !important;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar Start -->
     <header
-      class="fixed w-full uppercase text-[#544C43] bg-transparent body-font h-[33px] px-[20px] py-[8px]"
+      id="navbar"
+      class="fixed w-full uppercase text-[#544C43] bg-transparent body-font px-[20px] py-[8px] transition-colors duration-300"
     >
       <div
-        class="container mx-auto flex flex-wrap flex-col md:flex-row items-center"
+        class="container mx-auto flex flex-wrap items-center justify-between"
       >
-        <nav
-          class="flex lg:w-2/5 flex-wrap gap-[48px] items-center text-base md:ml-auto"
-        >
-          <a href="#" class="hover:text-gray-900">Introduction</a>
-          <a href="#" class="hover:text-gray-900">Products</a>
-          <a href="#" class="hover:text-gray-900">Careers</a>
-        </nav>
-        <a
-          href="#"
-          class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
-        >
-          <img src="./assets/Tract.svg" alt="Logo" />
-        </a>
+        <!-- Mobile menu button -->
+        <div class="lg:hidden flex w-full justify-between items-center">
+          <a
+            href="#"
+            class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
+          >
+            <img src="./assets/Tract.svg" alt="Logo" />
+          </a>
+          <button id="menu-toggle" class="block text-gray-900">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
         <div
-          class="lg:w-2/5 inline-flex flex gap-[48px] lg:justify-end ml-5 lg:ml-0"
+          class="hidden lg:flex container mx-auto flex flex-wrap flex-col md:flex-row items-center"
         >
-          <a href="#" class="hover:text-gray-900">Team</a>
-          <a href="#" class="hover:text-gray-900">Contact</a>
-          <a href="#" class="hover:text-gray-900">Blog</a>
+          <nav
+            class="flex lg:w-2/5 flex-wrap gap-[48px] items-center text-base md:ml-auto"
+          >
+            <a href="#" class="hover:text-gray-900">Introduction</a>
+            <a href="#" class="hover:text-gray-900">Products</a>
+            <a href="#" class="hover:text-gray-900">Careers</a>
+          </nav>
+          <a
+            href="#"
+            class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
+          >
+            <div class="logo-text-holder block w-[98px]"></div>
+            <img class="logo-text hidden" src="./assets/Tract.svg" alt="Logo" />
+          </a>
+          <a
+            href="#"
+            class="logo-with-text flex flex-col absolute top-[8px] left-1/2 transform -translate-x-1/2 gap-[29px] order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center"
+          >
+            <img
+              class="w-[27.25px] h-[29.24px]"
+              src="./assets/TractLogo.svg"
+              alt="Logo"
+            />
+            <img src="./assets/Tract.svg" alt="Logo" />
+          </a>
+          <div
+            class="lg:w-2/5 inline-flex flex gap-[48px] lg:justify-end ml-5 lg:ml-0"
+          >
+            <a href="#" class="hover:text-gray-900">Team</a>
+            <a href="#" class="hover:text-gray-900">Contact</a>
+            <a href="#" class="hover:text-gray-900">Blog</a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="lg:hidden fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-300"
+        >
+          <div class="flex justify-end p-[20px]">
+            <button
+              id="close-menu"
+              class="text-[#544C43] text-[12px] leading-[12px] tracking-[4%] border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase"
+            >
+              Close
+            </button>
+          </div>
+          <nav
+            class="flex text-[14px] text-[#544C43] leading-[17.25px] tracking-[4%] flex-col items-center gap-[51px] mt-12"
+          >
+            <a
+              href="#"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Introduction</a
+            >
+            <a
+              href="#"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Products</a
+            >
+            <a
+              href="#"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Careers</a
+            >
+            <a
+              href="#"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Team</a
+            >
+            <a
+              href="#"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="border-b border-b-[0.5px] border-b-[#544C43] py-[5px] uppercase hover:text-gray-700"
+              >Blog</a
+            >
+          </nav>
         </div>
       </div>
     </header>
@@ -438,7 +545,7 @@
 
     <!-- Footer Start -->
     <footer
-      class="flex flex-col p-[20px] lg:px-[257px] md:px-[180px] bg-[#8EA75F] text-center text-[#544C43] font-[400]"
+      class="flex flex-col p-[20px] lg:px-[250px] md:px-[180px] bg-[#8EA75F] text-center text-[#544C43] font-[400]"
     >
       <div class="flex flex-col gap-[40px] pt-[80px] pb-[100px]">
         <span class="text-[13px] leading-[16px] tracking-[4%]"
@@ -467,7 +574,7 @@
       </div>
 
       <div
-        class="flex items-center font-[400] text-[12px] leading-[16.8px] justify-center gap-[60px]"
+        class="flex flex-wrap items-center font-[400] text-[12px] leading-[16.8px] justify-center gap-[60px]"
       >
         <span>Copyright © 2024 Tract</span>
         <a href="#">Privacy Policy</a>
@@ -476,5 +583,30 @@
       </div>
     </footer>
     <!-- Footer End -->
+
+    <script>
+      // JavaScript for mobile menu toggle
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeMenu = document.getElementById("close-menu");
+      const navbar = document.getElementById("navbar");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.remove("-translate-x-full");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("-translate-x-full");
+      });
+
+      // Change navbar background on scroll
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>
